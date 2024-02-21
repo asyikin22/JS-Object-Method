@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Method</title>
+</head>
+<body>
+   <script>
+
+        const lightBulb = {
+            isOn: false,
+            turnOn: function () {
+                this.isOn = true;
+                console.log('The lightbulb is now on.');
+            },
+
+            turnOff: function () {
+                this.isOn = false;
+                console.log('The lightbulb is now off')
+            }
+        };
+
+        //Using the object's methods
+
+        lightBulb.turnOn();
+        console.log(lightBulb.isOn);
+
+        lightBulb.turnOff();
+        console.log(lightBulb.isOn);
+
+   </script>
+</body>
+</html>
